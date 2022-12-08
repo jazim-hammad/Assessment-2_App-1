@@ -16,7 +16,8 @@
         android:layout_marginEnd="28dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/crafting_table_ui" />
+        app:srcCompat="@drawable/crafting_table_ui"
+        tools:ignore="ContentDescription" />
 
     <ImageButton
         android:id="@+id/info"
@@ -27,7 +28,8 @@
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/info" />
+        app:srcCompat="@drawable/info"
+        tools:ignore="ContentDescription" />
 
     <ImageButton
         android:id="@+id/wooden_axe"
@@ -37,7 +39,8 @@
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintEnd_toStartOf="@+id/wooden_pickaxe"
         app:layout_constraintTop_toBottomOf="@+id/info"
-        app:srcCompat="@drawable/wooden_axe" />
+        app:srcCompat="@drawable/wooden_axe"
+        tools:ignore="ContentDescription" />
 
     <ImageButton
         android:id="@+id/wooden_sword"
@@ -48,7 +51,8 @@
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Slot2"
-        app:srcCompat="@drawable/wooden_sword" />
+        app:srcCompat="@drawable/wooden_sword"
+        tools:ignore="ContentDescription" />
 
     <ImageButton
         android:id="@+id/wooden_shovel"
@@ -58,7 +62,8 @@
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/gold"
         app:layout_constraintEnd_toStartOf="@+id/wooden_sword"
-        app:srcCompat="@drawable/wooden_shovel" />
+        app:srcCompat="@drawable/wooden_shovel"
+        tools:ignore="ContentDescription" />
 
     <ImageButton
         android:id="@+id/iron"
@@ -68,7 +73,8 @@
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintEnd_toStartOf="@+id/gold"
         app:layout_constraintTop_toBottomOf="@+id/wooden_axe"
-        app:srcCompat="@drawable/iron" />
+        app:srcCompat="@drawable/iron"
+        tools:ignore="ContentDescription" />
 
     <ImageButton
         android:id="@+id/gold"
@@ -78,7 +84,8 @@
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintEnd_toStartOf="@+id/diamond"
         app:layout_constraintTop_toBottomOf="@+id/wooden_pickaxe"
-        app:srcCompat="@drawable/gold" />
+        app:srcCompat="@drawable/gold"
+        tools:ignore="ContentDescription" />
 
     <ImageButton
         android:id="@+id/diamond"
@@ -89,7 +96,8 @@
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/wooden_shovel"
-        app:srcCompat="@drawable/diamond" />
+        app:srcCompat="@drawable/diamond"
+        tools:ignore="ContentDescription" />
 
     <ImageButton
         android:id="@+id/wooden_pickaxe"
@@ -99,7 +107,8 @@
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintEnd_toStartOf="@+id/wooden_shovel"
         app:layout_constraintTop_toBottomOf="@+id/info"
-        app:srcCompat="@drawable/wooden_pickaxe" />
+        app:srcCompat="@drawable/wooden_pickaxe"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/Slot1"
@@ -109,7 +118,8 @@
         android:layout_marginBottom="67dp"
         app:layout_constraintBottom_toTopOf="@+id/wooden_shovel"
         app:layout_constraintEnd_toStartOf="@+id/Slot2"
-        app:srcCompat="@drawable/slot1" />
+        app:srcCompat="@drawable/slot1"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/Result"
@@ -119,7 +129,8 @@
         android:layout_marginTop="260dp"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/result" />
+        app:srcCompat="@drawable/result"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/Slot2"
@@ -129,7 +140,8 @@
         android:layout_marginEnd="87dp"
         app:layout_constraintEnd_toStartOf="@+id/Result"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/slot2" />
+        app:srcCompat="@drawable/slot2"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/popup"
@@ -140,7 +152,8 @@
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/popup" />
+        app:srcCompat="@drawable/popup"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/calculate"
@@ -150,7 +163,8 @@
         android:layout_marginEnd="35dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@drawable/calculate" />
+        app:srcCompat="@drawable/calculate"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/reset"
@@ -160,7 +174,8 @@
         android:layout_marginTop="37dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@drawable/reset" />
+        app:srcCompat="@drawable/reset"
+        tools:ignore="ContentDescription" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
