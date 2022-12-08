@@ -1,13 +1,11 @@
 package com.example.craftingcalculator
 
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.ImageButton
-import android.widget.ImageView
 import androidx.core.content.res.ResourcesCompat
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_main.view.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,6 +16,8 @@ class MainActivity : AppCompatActivity() {
         //Variables to get the result.
         var tool = ""
         var ore = ""
+        var mediaPlayer = MediaPlayer.create(this,R.raw.smithing_sound)
+
         //button.setOnClickListener used to see when the button is pressed.
         wooden_axe.setOnClickListener{
             Slot1.setImageDrawable(wooden_axe.drawable)
@@ -50,6 +50,7 @@ class MainActivity : AppCompatActivity() {
 
         //calculating the result.
         calculate.setOnClickListener{
+            mediaPlayer.start()
             //if statement for the axe
             if(tool == "axe"){
                 if (ore == "diamond"){
