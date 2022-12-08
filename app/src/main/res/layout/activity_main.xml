@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:tileMode="repeat"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/crafting_table_ui" />
+
+    <ImageButton
+        android:id="@+id/info"
+        android:layout_width="47dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="320dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/info" />
+
+    <ImageButton
+        android:id="@+id/wooden_axe"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/wooden_pickaxe"
+        app:layout_constraintTop_toBottomOf="@+id/info"
+        app:srcCompat="@drawable/wooden_axe" />
+
+    <ImageButton
+        android:id="@+id/wooden_sword"
+        android:layout_width="37dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="224dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Slot2"
+        app:srcCompat="@drawable/wooden_sword" />
+
+    <ImageButton
+        android:id="@+id/wooden_shovel"
+        android:layout_width="36dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/gold"
+        app:layout_constraintEnd_toStartOf="@+id/wooden_sword"
+        app:srcCompat="@drawable/wooden_shovel" />
+
+    <ImageButton
+        android:id="@+id/iron"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/gold"
+        app:layout_constraintTop_toBottomOf="@+id/wooden_axe"
+        app:srcCompat="@drawable/iron" />
+
+    <ImageButton
+        android:id="@+id/gold"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/diamond"
+        app:layout_constraintTop_toBottomOf="@+id/wooden_pickaxe"
+        app:srcCompat="@drawable/gold" />
+
+    <ImageButton
+        android:id="@+id/diamond"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="260dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wooden_shovel"
+        app:srcCompat="@drawable/diamond" />
+
+    <ImageButton
+        android:id="@+id/wooden_pickaxe"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/wooden_shovel"
+        app:layout_constraintTop_toBottomOf="@+id/info"
+        app:srcCompat="@drawable/wooden_pickaxe" />
+
+    <ImageView
+        android:id="@+id/Slot1"
+        android:layout_width="35dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="67dp"
+        app:layout_constraintBottom_toTopOf="@+id/wooden_shovel"
+        app:layout_constraintEnd_toStartOf="@+id/Slot2"
+        app:srcCompat="@drawable/slot1" />
+
+    <ImageView
+        android:id="@+id/Result"
+        android:layout_width="48dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="260dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/result" />
+
+    <ImageView
+        android:id="@+id/Slot2"
+        android:layout_width="35dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="265dp"
+        android:layout_marginEnd="87dp"
+        app:layout_constraintEnd_toStartOf="@+id/Result"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/slot2" />
+
+    <ImageView
+        android:id="@+id/popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="68dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/popup" />
+
+    <ImageView
+        android:id="@+id/calculate"
+        android:layout_width="122dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/calculate" />
+
+    <ImageView
+        android:id="@+id/reset"
+        android:layout_width="122dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="37dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/reset" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
