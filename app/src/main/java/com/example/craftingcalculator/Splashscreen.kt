@@ -10,13 +10,13 @@ import android.view.WindowManager
 class splashscreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        supportActionBar?.hide()
+        supportActionBar?.hide() //Disables the purple bar at the top of the app.
         setContentView(R.layout.activity_splashscreen)
         window.setFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
-
+        //Codes for the splash screen.
         android.os.Handler(Looper.getMainLooper()).postDelayed({
             val intent = Intent( this, MainActivity::class.java)
             startActivity(intent)
